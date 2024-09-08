@@ -1,0 +1,38 @@
+.infobox {
+  max-width: 900px;
+  margin: 1rem auto;
+  padding: 2rem;
+  border: 2px solid white;
+  h1 {
+    text-align: center;
+  }
+}
+.skillGrid {
+  div {
+    min-width: 15rem;
+    min-height: 10rem;
+  }
+}
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  display: grid;
+  div {
+    h2 {
+      text-align: center;
+    }
+    ul {
+      margin: auto;
+    }
+    display: inline-block;
+    border: 2px solid white;
+    padding: 1.5rem;
+    margin: auto;
+  }
+}
