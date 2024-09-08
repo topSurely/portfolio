@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,7 +15,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <header>
-          <h1 style={{textAlign:"center"}}>Phillip Jason Geiger</h1>
+          <h1 style={{ textAlign: "center" }}>Phillip Jason Geiger</h1>
         </header>
         {children}
       </body>
