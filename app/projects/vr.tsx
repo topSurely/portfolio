@@ -20,7 +20,7 @@ export const VRProjects: Project[] = [
         name: "Thunder VR",
         description:
             <div>
-                <p>{"An immersive experience telling the story of Thunder (Ksiistsikom) as the player searches for their wife. Players would learn simple words in Blackfoot and narrated by an authentic Blackfoot Elder, Saakokoto."}</p>
+                <p>{"An immersive experience telling the story of Thunder (Ksiistsikom) as the player searches for their wife. Players would learn simple words in Blackfoot and narrated by an authentic Blackfoot Elder, Saakokoto. Blackfoot is considered to be an 'endangered' language, so "}</p>
             </div>,
         myRole:
             <div>
@@ -63,6 +63,7 @@ export const VRProjects: Project[] = [
         description: <div><p>
             An educational game for children designed to be shown at trade shows and fairs to teach them about how their food is made and where it comes from. The game involves keeping all nutrient meters in the middle; not too much, not too little. Depending on how much you used you would be scored in three different categories. </p> </div>,
         myRole: <div>
+            <p>At this time I was the sole Programmer and was the only person developing this project. Everything in engine was exclusively my work, including scene setup, asset preperation,  importing, and implementation.</p>
             <p>This was my first real 'game' project. Previous to this I had worked exclusively on VR video players for various events. My excitement at that time was for Unreal Engine 4 and as a desktop only experience I wanted to use the more high powered engine, but due to not knowing C++ and the relatively short timeline on this project we instead went all in on Blueprints.</p>
             <ul>
                 <li>
