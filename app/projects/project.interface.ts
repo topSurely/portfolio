@@ -4,6 +4,6 @@ export interface Project {
     myRole: JSX.Element;
     year: number;
     links?: {[meta:string]: string};
-    employer?: string;
+    funFact?: string[];
     metadata?: {[meta:string] : string[]}
 }
