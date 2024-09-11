@@ -3,7 +3,7 @@ const template: Project = {
     name: "project name",
     description: <div></div>,
     myRole: <div></div>,
-    year: 2017,
+    year: "2017",
     metadata: {
         "Engine": ["Unity"],
         "Language": ["C#"],
@@ -30,8 +30,8 @@ export const VRProjects: Project[] = [
                     <li>Asset Importing</li>
                 </ul>
             </div>,
-        year: 2018,
-        funFact: ["The Elder had to speak the same lines in 3 different ways so we could randomize the order of a certain puzzle.", "This is still my favorite game we made for the Oculus Go. The headset's controller only had a gyroscope, a touch pad, a trigger, and a back button, and we utilized all of it throughout the project finding joy in the limitation."],
+        year: "2018",
+        funFact: ["The Elder had to speak the same lines in 3 different ways so we could randomize the order of a certain puzzle.", "This is still my favorite game we made for the Oculus Go. The headset's controller only had a gyroscope, a touch pad, a trigger, and a back button. We utilized all of it throughout the project finding joy in the limitation."],
         metadata: {
             "Engine": ["Unity"],
             "Language": ["C#"],
@@ -47,7 +47,7 @@ export const VRProjects: Project[] = [
         name: "Lenica Escape Room",
         description: <div></div>,
         myRole: <div></div>,
-        year: 2018,
+        year: "2018",
         metadata: {
             "Engine": ["Unity"],
             "Language": ["C#"],
@@ -72,14 +72,15 @@ export const VRProjects: Project[] = [
                 <li>
                     Asset Importing
                 </li>
+                <li>Handling Steam Deployment</li>
             </ul>
         </div>,
-        year: 2018,
-        funFact: ["We had 3 different voicelines depending on outcome. If you did poorly, you would be called a 'rookie farmer' which stuck around as an inside joke.", "We ended up redeveloping the game to be played on touch screens. I developed this in about 2 weeks in Construct2 as that was something I happened to know quite well at the time, and this version of the game is still shown at the Calgary Stampede."],
+        year: "2018",
+        funFact: ["We ended up redeveloping the game to be played on touch screens. I developed this in about 2 weeks in Construct2 as that was something I happened to know quite well at the time, and this version of the game is still shown at the Calgary Stampede."],
         metadata: {
-            "Engine": ["Unreal Engine 4"],
+            "Engine": ["Unreal Engine 4", "Construct2"],
             "Language": ["Blueprints"],
-            "Platform": ["Virtual Reality", "Oculus Rift"],
+            "Platform": ["Virtual Reality", "Installation", "Oculus Rift", "Touch Screen"],
             "Other skills": ["Asset Prep in Blender", "Troubleshooting"]
         },
         links: {
@@ -100,7 +101,7 @@ export const VRProjects: Project[] = [
                     <li>Asset importing</li>
                 </ul>
             </div>,
-        year: 2019,
+        year: "2019",
         funFact: ["We added a level selector to more easily test the games. It was accessed by mashing the second E, and entering the level selector would play a long reverberating recording of myself saying the letter E dramatically."],
         metadata: {
             "Engine": ["Unity"],
@@ -126,20 +127,22 @@ export const VRProjects: Project[] = [
                 <ul>
                     <li>Minigame Design and Development</li>
                     <li>Asset Cleanup and Importing</li>
-                    <li>Development of Utilities for educational segment creation:
+                    <li>Development of Utilities for educational segment creation using the Unity Director:
                         <ul>
                             <li>
                                 Custom Unity Director Asset to control the movement of our host NPC Appo without extensive scripting and being able to preview their position without having to run the scene.
                             </li>
+                            <li>Assistance with asset pipeline and general Unity implementation.</li>
                             <li>
                                 Assistance with rigging
                             </li>
                             <li>Materials and Shaders for educational segments using Shader Graph</li>
                         </ul>
                     </li>
+                    <li>Handling Steam Deployment</li>
                 </ul>
             </div>,
-        year: 2020,
+        year: "2020",
         links: {
             "Product Page": "https://www.meta.com/experiences/experience-the-energy-adapting-futures/24905470952402292/",
             "Experience Trailer": "https://youtu.be/Bp7zRXK1Yds",
@@ -150,5 +153,77 @@ export const VRProjects: Project[] = [
             "Platform": ["Virtual Reality", "Oculus Quest", "Meta Quest"],
             "Other skills": ["Asset Prep and Cleanup in Blender", "Troubleshooting"]
         }
+    },
+    {
+        name: "Jordan Jones Dies in Space",
+        description: <div><p>Jordan Jones gets stranded in space after their ship performs an emergency jump. As they slowly lose oxygen the player journeys through their memories set in the void of space.</p><p>This was MAMMOTH XR's only solo project.</p></div>,
+        myRole: <div>
+            <ul>
+                <li>
+                    Setting up an elaborate scenario manager that allowed us to create each experience as an individual scene. This made testing each scene individually much easier and made it simpler to rearrange the experience as needed.
+                </li>
+                <li>
+                    Creating a system allowing artists to implement motion graphics on the HUD in game.
+                </li>
+                <li>
+                    {"Creating a movement system allowing for full three dimensional movement with ease, comfort, and even two different movement options."}
+                </li>
+                <li>Meta Store Deployment</li>
+            </ul></div>,
+        year: "2022",
+        funFact: ["We ended up having to aggressively downscale much of the game's graphics and effects to make it run on the Quest 1. Meta removed the Quest 1 requirements a few months after release."],
+        metadata: {
+            "Engine": ["Unity"],
+            "Language": ["C#"],
+            "Platform": ["Virtual Reality", "Meta Quest"],
+            "Other skills": ["Asset Prep in Blender", "Troubleshooting"]
+        },
+        links: {
+            "Meta Product Page": "https://www.meta.com/en-gb/experiences/jordan-jones-dies-in-space/4494213844005443/",
+        }
+    },
+    {
+        name: "Second Spirit",
+        description: <div>
+            <p>
+
+            </p>
+            <p>
+                The project was unfortunately cancelled, but we still developed a full prototype for funding purposes.
+            </p>
+        </div>,
+        myRole: <div>
+            <p>As this was a small demo, I was assigned as the sole developer. Despite this, we still overshot scope but pulled off something very nice.</p>
+            <ul>
+                <li>
+                    Implenting all game features, including:
+                    <ul>
+                        <li>
+                            A pop-up/pop-down player scaling system that allowed you to get a better look at the field.
+                        </li>
+                        <li>
+                            A teleportation system based on pads that exist in the world that you could use by placing Twig nearby.
+                        </li>
+                        <li>
+                            Navigating Twig, the main character using a precalculated navmesh while still ensuring direct and satisfying control via influencing where Twig would go via the control stick.
+                        </li>
+                        <li>
+                            Roko, a bear that lives on your arm, that you could throw to solve puzzles. It used precalculated physics to ensure consistency and no direct need for accuracy or skill while still giving full control to the player, and had various hiding spots that it would navigate to in order to despawn.
+                        </li>
+                        <li>
+
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>,
+        year: "😩",
+        metadata: {
+            "Engine": ["Unity"],
+            "Language": ["C#"],
+            "Platform": ["Virtual Reality", "Oculus Rift"],
+            "Other skills": ["Asset Prep in Blender", "Troubleshooting", "Shader Graph"]
+        },
+
     }
 ]
