@@ -40,7 +40,7 @@ export const VRProjects: Project[] = [
         },
         links: {
             "Product Page": "https://mammothxr.com/archive/thunder.html",
-            "Experience Trailer": "https://youtu.be/TsZSh8OiKZE",
+            "Experience Trailer": { videoID: "TsZSh8OiKZE", modal: true },
         }
     },
     {
@@ -85,7 +85,8 @@ export const VRProjects: Project[] = [
         },
         links: {
             "Product Page": "https://mammothxr.com/archive/nutrients-for-life.html",
-            "Experience Trailer": "https://youtu.be/FFViE-2mEiA",
+            "Experience Trailer": { videoID: "FFViE-2mEiA", modal: true },
+
         }
     },
     {
@@ -111,7 +112,8 @@ export const VRProjects: Project[] = [
         },
         links: {
             "Product Page": "https://mammothxr.com/archive/petroLMI-challenge.html",
-            "Experience Trailer": "https://youtu.be/QiPbWEnq504",
+            "Experience Trailer": { videoID: "QiPbWEnq504", modal: true },
+
         }
     },
     {
@@ -145,7 +147,7 @@ export const VRProjects: Project[] = [
         year: "2020",
         links: {
             "Product Page": "https://www.meta.com/experiences/experience-the-energy-adapting-futures/24905470952402292/",
-            "Experience Trailer": "https://youtu.be/Bp7zRXK1Yds",
+            "Experience Trailer": { videoID: "Bp7zRXK1Yds", modal: true },
         },
         metadata: {
             "Engine": ["Unity"],
@@ -209,9 +211,6 @@ export const VRProjects: Project[] = [
                         </li>
                         <li>
                             Roko, a bear that lives on your arm, that you could throw to solve puzzles. It used precalculated physics to ensure consistency and no direct need for accuracy or skill while still giving full control to the player, and had various hiding spots that it would navigate to in order to despawn.
-                        </li>
-                        <li>
-
                         </li>
                     </ul>
                 </li>
