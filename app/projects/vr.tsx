@@ -182,6 +182,7 @@ export const VRProjects: Project[] = [
         },
         links: {
             "Meta Product Page": "https://www.meta.com/en-gb/experiences/jordan-jones-dies-in-space/4494213844005443/",
+            "Playthrough": { videoID: "p6bTAy5ZW1A", modal: true }
         }
     },
     {
@@ -223,6 +224,9 @@ export const VRProjects: Project[] = [
             "Platform": ["Virtual Reality", "Oculus Rift"],
             "Other skills": ["Asset Prep in Blender", "Troubleshooting", "Shader Graph"]
         },
-
+        links: {
+            "Playthrough": { videoID: "5DGITYlJ0EE", modal: true },
+            "Trailer": { videoID: "2zmvSa8roYA", modal: true }
+        }
     }
 ]
