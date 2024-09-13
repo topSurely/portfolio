@@ -1,5 +1,8 @@
+'use client'
 import styles from "./page.module.scss";
 import Link from "next/link";
+import { VRProjects } from "./projects/vr";
+import ProjectPage from "./projects/project";
 
 export default function Home() {
   return (
@@ -59,6 +62,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {VRProjects.map((project) => {
+          return ProjectPage({ project })
+        })}
       </main>
     </div>
   );

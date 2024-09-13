@@ -11,8 +11,8 @@ const template: Project = {
         "Other skills": ["Asset Prep in Blender", "Troubleshooting"]
     },
     links: {
-        "Product Page": "",
-        "Experience Trailer": "",
+        "Product Page": {},
+        "Experience Trailer": {},
     }
 }
 export const VRProjects: Project[] = [
@@ -39,8 +39,8 @@ export const VRProjects: Project[] = [
             "Other skills": ["Asset Prep in Blender", "Troubleshooting"]
         },
         links: {
-            "Product Page": "https://mammothxr.com/archive/thunder.html",
-            "Experience Trailer": { videoID: "TsZSh8OiKZE", modal: true },
+            "Product Page": { link: "https://mammothxr.com/archive/thunder.html" },
+            "Experience Trailer": { videoID: "TsZSh8OiKZE" },
         }
     },
     {
@@ -55,7 +55,7 @@ export const VRProjects: Project[] = [
             "Other skills": ["Asset Prep in Blender", "Troubleshooting"]
         },
         links: {
-            "Product Page": "https://mammothxr.com/archive/lenica-escape.html",
+            "Product Page": { link: "https://mammothxr.com/archive/lenica-escape.html" },
         }
     },
     {
@@ -84,8 +84,8 @@ export const VRProjects: Project[] = [
             "Other skills": ["Asset Prep in Blender", "Troubleshooting"]
         },
         links: {
-            "Product Page": "https://mammothxr.com/archive/nutrients-for-life.html",
-            "Experience Trailer": { videoID: "FFViE-2mEiA", modal: true },
+            "Product Page": { link: "https://mammothxr.com/archive/nutrients-for-life.html" },
+            "Experience Trailer": { videoID: "FFViE-2mEiA" },
 
         }
     },
@@ -111,8 +111,8 @@ export const VRProjects: Project[] = [
             "Other skills": ["Asset Prep in Blender", "Troubleshooting"]
         },
         links: {
-            "Product Page": "https://mammothxr.com/archive/petroLMI-challenge.html",
-            "Experience Trailer": { videoID: "QiPbWEnq504", modal: true },
+            "Product Page": { link: "https://mammothxr.com/archive/petroLMI-challenge.html" },
+            "Experience Trailer": { videoID: "QiPbWEnq504" },
 
         }
     },
@@ -146,43 +146,14 @@ export const VRProjects: Project[] = [
             </div>,
         year: "2020",
         links: {
-            "Product Page": "https://www.meta.com/experiences/experience-the-energy-adapting-futures/24905470952402292/",
-            "Experience Trailer": { videoID: "Bp7zRXK1Yds", modal: true },
+            "Product Page": { link: "https://www.meta.com/experiences/experience-the-energy-adapting-futures/24905470952402292/" },
+            "Experience Trailer": { videoID: "Bp7zRXK1Yds" },
         },
         metadata: {
             "Engine": ["Unity"],
             "Language": ["C#"],
             "Platform": ["Virtual Reality", "Oculus Quest", "Meta Quest"],
             "Other skills": ["Asset Prep and Cleanup in Blender", "Troubleshooting"]
-        }
-    },
-    {
-        name: "Jordan Jones Dies in Space",
-        description: <div><p>Jordan Jones gets stranded in space after their ship performs an emergency jump. As they slowly lose oxygen the player journeys through their memories set in the void of space.</p><p>This was MAMMOTH XR's only solo project.</p></div>,
-        myRole: <div>
-            <ul>
-                <li>
-                    Setting up an elaborate scenario manager that allowed us to create each experience as an individual scene. This made testing each scene individually much easier and made it simpler to rearrange the experience as needed.
-                </li>
-                <li>
-                    Creating a system allowing artists to implement motion graphics on the HUD in game.
-                </li>
-                <li>
-                    {"Creating a movement system allowing for full three dimensional movement with ease, comfort, and even two different movement options."}
-                </li>
-                <li>Meta Store Deployment</li>
-            </ul></div>,
-        year: "2022",
-        funFact: ["We ended up having to aggressively downscale much of the game's graphics and effects to make it run on the Quest 1. Meta removed the Quest 1 requirements a few months after release."],
-        metadata: {
-            "Engine": ["Unity"],
-            "Language": ["C#"],
-            "Platform": ["Virtual Reality", "Meta Quest"],
-            "Other skills": ["Asset Prep in Blender", "Troubleshooting"]
-        },
-        links: {
-            "Meta Product Page": "https://www.meta.com/en-gb/experiences/jordan-jones-dies-in-space/4494213844005443/",
-            "Playthrough": { videoID: "p6bTAy5ZW1A", modal: true }
         }
     },
     {
@@ -225,8 +196,37 @@ export const VRProjects: Project[] = [
             "Other skills": ["Asset Prep in Blender", "Troubleshooting", "Shader Graph"]
         },
         links: {
-            "Playthrough": { videoID: "5DGITYlJ0EE", modal: true },
-            "Trailer": { videoID: "2zmvSa8roYA", modal: true }
+            "Playthrough": { videoID: "5DGITYlJ0EE", },
+            "Trailer": { videoID: "2zmvSa8roYA", }
         }
-    }
+    },
+    {
+        name: "Jordan Jones Dies in Space",
+        description: <div><p>Jordan Jones gets stranded in space after their ship performs an emergency jump. As they slowly lose oxygen the player journeys through their memories set in the void of space.</p><p>This was MAMMOTH XR's only solo project.</p></div>,
+        myRole: <div>
+            <ul>
+                <li>
+                    Setting up an elaborate scenario manager that allowed us to create each experience as an individual scene. This made testing each scene individually much easier and made it simpler to rearrange the experience as needed.
+                </li>
+                <li>
+                    Creating a system allowing artists to implement motion graphics on the HUD in game.
+                </li>
+                <li>
+                    {"Creating a movement system allowing for full three dimensional movement with ease, comfort, and even two different movement options."}
+                </li>
+                <li>Meta Store Deployment</li>
+            </ul></div>,
+        year: "2022",
+        funFact: ["We ended up having to aggressively downscale much of the game's graphics and effects to make it run on the Quest 1. Meta removed the Quest 1 requirements a few months after release."],
+        metadata: {
+            "Engine": ["Unity"],
+            "Language": ["C#"],
+            "Platform": ["Virtual Reality", "Meta Quest"],
+            "Other skills": ["Asset Prep in Blender", "Troubleshooting"]
+        },
+        links: {
+            "Meta Product Page": { link: "https://www.meta.com/en-gb/experiences/jordan-jones-dies-in-space/4494213844005443/" },
+            "Playthrough": { videoID: "p6bTAy5ZW1A" }
+        }
+    },
 ]
