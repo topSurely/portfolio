@@ -41,7 +41,8 @@ export const VRProjects: Project[] = [
         links: {
             "Product Page": { link: "https://mammothxr.com/archive/thunder.html" },
             "Experience Trailer": { videoID: "TsZSh8OiKZE" },
-        }
+        },
+        color: "#0090FF"
     },
     {
         name: "Lenica Escape Room",
@@ -56,7 +57,8 @@ export const VRProjects: Project[] = [
         },
         links: {
             "Product Page": { link: "https://mammothxr.com/archive/lenica-escape.html" },
-        }
+        },
+        color: "#FF7E00"
     },
     {
         name: "Nutrients for Life",
@@ -87,7 +89,8 @@ export const VRProjects: Project[] = [
             "Product Page": { link: "https://mammothxr.com/archive/nutrients-for-life.html" },
             "Experience Trailer": { videoID: "FFViE-2mEiA" },
 
-        }
+        },
+        color: "#2CB029"
     },
     {
         name: "Experience the Energy: Take The Challenge",
@@ -114,7 +117,8 @@ export const VRProjects: Project[] = [
             "Product Page": { link: "https://mammothxr.com/archive/petroLMI-challenge.html" },
             "Experience Trailer": { videoID: "QiPbWEnq504" },
 
-        }
+        },
+        color: "#29A2B0"
     },
     {
         name: "Experience the Energy: Adapting Futures",
@@ -154,7 +158,8 @@ export const VRProjects: Project[] = [
             "Language": ["C#"],
             "Platform": ["Virtual Reality", "Oculus Quest", "Meta Quest"],
             "Other skills": ["Asset Prep and Cleanup in Blender", "Troubleshooting"]
-        }
+        },
+        color: "#E6E823"
     },
     {
         name: "Second Spirit",
@@ -198,7 +203,8 @@ export const VRProjects: Project[] = [
         links: {
             "Playthrough": { videoID: "5DGITYlJ0EE", },
             "Trailer": { videoID: "2zmvSa8roYA", }
-        }
+        },
+        color: "#E86423"
     },
     {
         name: "Jordan Jones Dies in Space",
@@ -227,6 +233,7 @@ export const VRProjects: Project[] = [
         links: {
             "Meta Product Page": { link: "https://www.meta.com/en-gb/experiences/jordan-jones-dies-in-space/4494213844005443/" },
             "Playthrough": { videoID: "p6bTAy5ZW1A" }
-        }
+        },
+        color: "#09E5FF"
     },
 ]

@@ -3,10 +3,34 @@ import styles from "./page.module.scss";
 import Link from "next/link";
 import { VRProjects } from "./projects/vr";
 import ProjectPage from "./projects/project";
+import ModalVideo from "react-modal-video";
+import { useState } from "react";
+import projectStyles from "./projects/project.module.scss"
+
+enum ProjectSelection {
+  VR,
+  NonVR,
+  Web
+}
 
 export default function Home() {
+  const [modalOpen, setModalOpen] = useState<boolean>(false);
+  const [modalVideoID, setVideoID] = useState<string>("")
+  const [selectedProjects, setSelectedProjects] = useState<ProjectSelection | undefined>();
+  const OpenModal = (videoID: string) => {
+    setModalOpen(true);
+    setVideoID(videoID);
+  }
+
   return (
     <div className={styles.page}>
+      <ModalVideo
+        channel="youtube"
+        youtube={{ mute: 0, autoplay: 0 }}
+        videoId={modalVideoID}
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+      />
       <main className={styles.main}>
         <div className={styles.infobox}>
           <h1>Okay, here goes</h1>
@@ -51,7 +75,7 @@ export default function Home() {
         <div className={styles.infobox}>
           <h1>Projects</h1>
           <div className={styles.grid}>
-            <div>
+            <div onClick={() => setSelectedProjects(ProjectSelection.VR)}>
               <h2>VR</h2>
             </div>
             <div>
@@ -62,9 +86,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {VRProjects.map((project) => {
-          return ProjectPage({ project })
-        })}
+        {selectedProjects == ProjectSelection.VR && <div className={projectStyles.projectsContainer}>
+          {
+            VRProjects.map((project) => {
+              return ProjectPage({ project, modal: OpenModal })
+            })}
+        </div>}
+        {selectedProjects == undefined && <div style={{ paddingBottom: "10rem" }} />}
       </main>
     </div>
   );

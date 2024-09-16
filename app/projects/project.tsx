@@ -1,5 +1,6 @@
 'use client'
 import { Project } from "./project.interface";
+import styles from "./project.module.scss"
 export default function ProjectPage({ project, modal }: { project: Project, modal?: (videoID: string) => void }) {
     const links = (): JSX.Element => {
         if (!project.links) return <></>
@@ -10,8 +11,8 @@ export default function ProjectPage({ project, modal }: { project: Project, moda
                 if (!project.links) return <></>
                 const modalID = project.links[value].videoID
                 const link = modalID ? undefined : project.links[value].link
-                return <li><a href={link ?? ""} onClick={() => {
-                    // modalID && modal && modal(modalID)
+                return <li><a href={link ?? undefined} target="_blank" rel="noopener noreferrer" onClick={() => {
+                    modalID && modal && modal(modalID)
                 }}>{value}</a></li>
             })}
         </ul>)
@@ -39,14 +40,15 @@ export default function ProjectPage({ project, modal }: { project: Project, moda
             </table>
         )
     }
-    return (<div>
-        <div><h1>{project.name}</h1></div>
+    return (<div className={styles.projectBox} style={{ borderColor: project.color }}>
+        <div><h1 style={{ color: project.color }}>{project.name}</h1></div>
         <h3>Year: {project.year}</h3>
         {project.description}
         {project.myRole}
+        <h3>Links</h3>
         {project.links && links()}
         <div>
             {metadata()}
         </div>
-    </div>)
+    </div >)
 }
