@@ -6,6 +6,7 @@ import ProjectPage from "./projects/project";
 import ModalVideo from "react-modal-video";
 import { useState } from "react";
 import projectStyles from "./projects/project.module.scss"
+import Icon from "./icon";
 
 enum ProjectSelection {
   VR,
@@ -45,37 +46,37 @@ export default function Home() {
             <div>
               <h2>Languages</h2>
               <ul>
-                <li>Typescript/Javascript</li>
-                <li>C#</li>
-                <li>Python</li>
-                <li>GDScript</li>
+                <li><Icon icon="react" />Typescript/Javascript</li>
+                <li><Icon icon="csharp" />C#</li>
+                <li><Icon icon="python" />Python</li>
+                <li><Icon icon="godot" />GDScript</li>
               </ul>
             </div>
             <div>
               <h2>Game Engines</h2>
               <ul>
-                <li>Unity</li>
-                <li>Godot</li>
-                <li>Unreal Engine</li>
+                <li><Icon icon="unity" />Unity</li>
+                <li><Icon icon="godot" />Godot</li>
+                <li><Icon icon="unrealengine" />Unreal Engine</li>
               </ul>
             </div>
             <div>
               <h2>Frameworks</h2>
               <ul>
                 <li>
-                  Next.js
+                  <Icon icon="nextjs" />Next.js
                 </li>
                 <li>
-                  Pixi.js
+                  <Icon icon="pixijs" />Pixi.js
                 </li>
                 <li>
-                  babylon.js
+                  <Icon icon="babylonjs" />babylon.js
                 </li>
                 <li>
-                  Nest.js
+                  <Icon icon="nestjs" />Nest.js
                 </li>
                 <li>
-                  TypeORM
+                  <Icon icon="typeorm" />TypeORM
                 </li>
               </ul>
             </div>
