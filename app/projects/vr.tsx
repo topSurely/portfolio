@@ -166,10 +166,43 @@ export const VRProjects: Project[] = [
         color: "#E6E823"
     },
     {
+        name: "Glacier",
+        year: "2019",
+        description: <div>
+            <p>Created for Telus Spark Science Center, this was meant to be an experience to allow visitors to experience sliding into a crevace with narration written by an unfortunate hiker who thankfully survived such an event.</p>
+            <p>This project was unfortunately cancelled due to COVID-19 as people were going to be less willing to share a VR headset with strangers.</p>
+        </div>,
+        myRole: <div>
+            <p>I was the sole programmer on this project.</p>
+            <ul>
+                <li>
+                    Created a movement system that allowed the player to move forward by striking the poles into the ground. This involved the following:
+                </li>
+                <li>
+                    I happened to have the exertise to actually import the terrain of the actual location into the game
+                </li>
+                <li>
+                    As this was running on mobile hardware, the environment couldn't be too large. I ended up implementing a seperate "3D Skybox" inspired by Half Life 2 so we could have a much larger environment during the fly-in.
+                </li>
+            </ul>
+
+        </div>,
+        metadata: {
+            "Engine": ["Unity"],
+            "Language": ["C#"],
+            "Platform": ["Virtual Reality", "Oculus Rift"],
+            "Other skills": ["Asset Prep in Blender", "Troubleshooting", "Shader Graph"]
+        },
+        links: {
+            "Playthrough": { videoID: "kLQodrWMQWQ", },
+        },
+        color: "#E86423"
+    },
+    {
         name: "Second Spirit",
         description: <div>
             <p>
-
+                This was meant to be a full immersive VR story game made with USAY about a character named Twig escaping the oppression of the outsider Skritans. The prototype showcases the ability for the player to turn into Twig's guardian, pick up a weapon, and switch between the two modes as well as teleport around the environment with hints on what to do next.
             </p>
             <p>
                 The project was unfortunately cancelled, but we still developed a full prototype for funding purposes.
@@ -197,7 +230,7 @@ export const VRProjects: Project[] = [
                 </li>
             </ul>
         </div>,
-        year: "😩",
+        year: "N/A",
         metadata: {
             "Engine": ["Unity"],
             "Language": ["C#"],
