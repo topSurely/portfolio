@@ -46,8 +46,12 @@ export const VRProjects: Project[] = [
     },
     {
         name: "Lenica Escape Room",
-        description: <div></div>,
-        myRole: <div></div>,
+        description: <div><p>
+            Part of a research project with Lenica Research Group we developed a series of minigames in the theme of an escape room for the purpose of assisting people who have suffered a brain injury such as a stroke or concussion.
+        </p></div>,
+        myRole: <div><p>
+            I developed all the minigames and functionality for this project, including a trace by numbers game, a flashing light sequence, and a password solving game where you had to pick the letter of the corresponding currently playing instrument.
+        </p></div>,
         year: "2018",
         metadata: {
             "Engine": ["Unity"],
@@ -106,7 +110,7 @@ export const VRProjects: Project[] = [
                 </ul>
             </div>,
         year: "2019",
-        funFact: ["We added a level selector to more easily test the games. It was accessed by mashing the second E, and entering the level selector would play a long reverberating recording of myself saying the letter E dramatically."],
+        funFact: ["We added a level selector to more easily test the games. It was accessed by mashing the second E, and entering the level selector would play a long reverberating recording of myself saying the letter E dramatically. I was under the impression this would be a fun internal easter egg, but was later told our client asked for a way to access a level selector and they were given this secret information and heard the E."],
         metadata: {
             "Engine": ["Unity"],
             "Language": ["C#"],

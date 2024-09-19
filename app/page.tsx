@@ -21,6 +21,9 @@ export default function Home() {
     setModalOpen(true);
     setVideoID(videoID);
   }
+  const VRProjectsElements = VRProjects.map((project) => {
+    return ProjectPage({ project, modal: OpenModal })
+  })
 
   return (
     <div className={styles.page}>
@@ -68,6 +71,12 @@ export default function Home() {
                 <li>
                   babylon.js
                 </li>
+                <li>
+                  Nest.js
+                </li>
+                <li>
+                  TypeORM
+                </li>
               </ul>
             </div>
           </div>
@@ -86,11 +95,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {selectedProjects == ProjectSelection.VR && <div className={projectStyles.projectsContainer}>
-          {
-            VRProjects.map((project) => {
-              return ProjectPage({ project, modal: OpenModal })
-            })}
+        {selectedProjects != undefined && <div className={projectStyles.projectsContainer}>
+          {selectedProjects == ProjectSelection.VR && VRProjectsElements}
         </div>}
         {selectedProjects == undefined && <div style={{ paddingBottom: "10rem" }} />}
       </main>

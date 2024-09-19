@@ -44,9 +44,15 @@ export default function ProjectPage({ project, modal }: { project: Project, moda
         <div><h1 style={{ color: project.color }}>{project.name}</h1></div>
         <h3>Year: {project.year}</h3>
         {project.description}
+        <h3>My Role:</h3>
         {project.myRole}
-        <h3>Links</h3>
-        {project.links && links()}
+        {project.links && <h3>Links</h3> && links()}
+        {project.funFact && (project.funFact.length > 1 ? <h3>Fun Facts:</h3> : <h3>Fun Fact</h3>)}
+        {project.funFact && <ul>
+            {project.funFact.map((fact) => {
+                return <li>{fact}</li>
+            })}
+        </ul>}
         <div>
             {metadata()}
         </div>
