@@ -1,3 +1,4 @@
+'use client'
 import { Project } from "./project.interface";
 const template: Project = {
     name: "project name",
@@ -167,7 +168,7 @@ export const VRProjects: Project[] = [
     },
     {
         name: "Glacier",
-        year: "2019",
+        year: "2020",
         description: <div>
             <p>Created for Telus Spark Science Center, this was meant to be an experience to allow visitors to experience sliding into a crevace with narration written by an unfortunate hiker who thankfully survived such an event.</p>
             <p>This project was unfortunately cancelled due to COVID-19 as people were going to be less willing to share a VR headset with strangers.</p>
@@ -196,7 +197,7 @@ export const VRProjects: Project[] = [
         links: {
             "Playthrough": { videoID: "kLQodrWMQWQ", },
         },
-        color: "#E86423"
+        color: "#79E7FF"
     },
     {
         name: "Second Spirit",

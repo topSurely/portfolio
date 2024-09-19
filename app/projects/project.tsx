@@ -46,7 +46,8 @@ export default function ProjectPage({ project, modal }: { project: Project, moda
         {project.description}
         <h3>My Role:</h3>
         {project.myRole}
-        {project.links && <h3>Links</h3> && links()}
+        {project.links && <h3>Links</h3>}
+        {project.links && links()}
         {project.funFact && (project.funFact.length > 1 ? <h3>Fun Facts:</h3> : <h3>Fun Fact</h3>)}
         {project.funFact && <ul>
             {project.funFact.map((fact) => {

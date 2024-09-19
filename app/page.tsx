@@ -6,7 +6,7 @@ import ProjectPage from "./projects/project";
 import ModalVideo from "react-modal-video";
 import { useState } from "react";
 import projectStyles from "./projects/project.module.scss"
-import Icon from "./icon";
+import { Icon } from "@/utils/icon";
 
 enum ProjectSelection {
   VR,

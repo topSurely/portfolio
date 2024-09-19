@@ -11,6 +11,6 @@ type IconType = "babylonjs" |
     "typeorm" |
     "unity" |
     "unrealengine"
-export default function Icon({ icon }: { icon: IconType }) {
+export function Icon({ icon }: { icon: IconType }) {
     return <i className={`sprite`} style={{ backgroundImage: `url(./icons/${icon}.png)` }} />
 }
