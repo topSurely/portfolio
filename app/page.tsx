@@ -8,6 +8,7 @@ import { useState } from "react";
 import projectStyles from "./projects/project.module.scss"
 import { Icon } from "@/utils/icon";
 import { NonVRProjects } from "./projects/nonvr";
+import { WebProjects } from "./projects/web";
 
 enum ProjectSelection {
   VR,
@@ -27,6 +28,9 @@ export default function Home() {
     return ProjectPage({ project, modal: OpenModal })
   })
   const NonVRProjectsElements = NonVRProjects.map((project) => {
+    return ProjectPage({ project, modal: OpenModal })
+  })
+  const WebProjectsElements = WebProjects.map((project) => {
     return ProjectPage({ project, modal: OpenModal })
   })
 
@@ -103,6 +107,7 @@ export default function Home() {
         {selectedProjects != undefined && <div className={projectStyles.projectsContainer}>
           {selectedProjects == ProjectSelection.VR && VRProjectsElements}
           {selectedProjects == ProjectSelection.NonVR && NonVRProjectsElements}
+          {selectedProjects == ProjectSelection.Web && WebProjectsElements}
         </div>}
         {selectedProjects == undefined && <div style={{ paddingBottom: "10rem" }} />}
       </main>
