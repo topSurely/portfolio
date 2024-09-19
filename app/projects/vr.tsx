@@ -20,7 +20,7 @@ export const VRProjects: Project[] = [
         name: "Thunder VR",
         description:
             <div>
-                <p>{"An immersive experience telling the story of Thunder (Ksiistsikom) as the player searches for their wife. Players would learn simple words in Blackfoot and narrated by an authentic Blackfoot Elder, Saakokoto. Blackfoot is considered to be an 'endangered' language, so "}</p>
+                <p>{"An immersive experience telling the story of Thunder (Ksiistsikom) as the player searches for their wife. Players would learn simple words in Blackfoot and narrated by an authentic Blackfoot Elder, Saakokoto. Blackfoot is considered to be an 'endangered' language, so the creation of this game was also considered to be a preservation project."}</p>
             </div>,
         myRole:
             <div>
