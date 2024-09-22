@@ -21,7 +21,7 @@ export default function ProjectPage({ project, modal }: { project: Project, moda
         if (!project.metadata) return <></>
         const keys = Object.keys(project.metadata)
         return (
-            <table className={styles.metaTable}>
+            <table>
                 <thead>
                     <tr>
                         {keys.map((value) => {

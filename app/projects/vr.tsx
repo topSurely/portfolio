@@ -25,7 +25,7 @@ export const VRProjects: Project[] = [
             </div>,
         myRole:
             <div>
-                <p>At this time I was the sole Programmer and was the only person developing this project. Everything in engine was exclusively my work, including scene setup, asset preperation,  importing, and implementation.</p>
+                <p>At this time I was the sole Programmer and was the only person developing this project. Everything in engine was handled by myself, including scene setup, asset preperation, importing, and implementation.</p>
                 <ul>
                     <li>Game Design and Development</li>
                     <li>Asset Importing</li>

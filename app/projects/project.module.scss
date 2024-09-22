@@ -1,5 +1,5 @@
 .projectBox {
-    padding: 2rem;
+    padding: 3rem;
     border: 1px solid white;
     margin: 1rem;
 }
@@ -31,7 +31,12 @@
 
 }
 @media screen and (max-width: 400px) {
-    .metaTable {
-        font-size: x-small;
+    .projectsContainer {
+        table {
+            font-size: x-small;
+        }
+    }
+    .projectBox {
+        padding: 2rem;
     }
 }
