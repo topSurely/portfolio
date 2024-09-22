@@ -12,5 +12,5 @@ type IconType = "babylonjs" |
     "unity" |
     "unrealengine"
 export function Icon({ icon }: { icon: IconType }) {
-    return <i className={`sprite`} style={{ backgroundImage: `url(./icons/${icon}.png)` }} />
+    return <i className={`sprite`} style={{ backgroundImage: `url(./icons/${icon}.png)`, marginRight: "0.5rem" }} />
 }

@@ -11,7 +11,7 @@ export default function ProjectPage({ project, modal }: { project: Project, moda
                 if (!project.links) return <></>
                 const modalID = project.links[value].videoID
                 const link = modalID ? undefined : project.links[value].link
-                return <li><a href={link ?? undefined} target="_blank" rel="noopener noreferrer" onClick={() => {
+                return <li key={project.name + value}><a href={link ?? undefined} target="_blank" rel="noopener noreferrer" onClick={() => {
                     modalID && modal && modal(modalID)
                 }}>{value}</a></li>
             })}
@@ -21,11 +21,11 @@ export default function ProjectPage({ project, modal }: { project: Project, moda
         if (!project.metadata) return <></>
         const keys = Object.keys(project.metadata)
         return (
-            <table>
+            <table className={styles.metaTable}>
                 <thead>
                     <tr>
                         {keys.map((value) => {
-                            return <th>{value}</th>
+                            return <th key={project.name + value}>{value}</th>
                         })}
                     </tr>
                 </thead>
@@ -33,7 +33,7 @@ export default function ProjectPage({ project, modal }: { project: Project, moda
                     <tr>
                         {keys.map((value) => {
                             if (!project.metadata) return <></>
-                            return <td>{project.metadata[value].join(", ")}</td>
+                            return <td key={project.name + value + "meta"}>{project.metadata[value].join(", ")}</td>
                         })}
                     </tr>
                 </tbody>
@@ -50,8 +50,8 @@ export default function ProjectPage({ project, modal }: { project: Project, moda
         {project.links && links()}
         {project.funFact && (project.funFact.length > 1 ? <h3>Fun Facts:</h3> : <h3>Fun Fact</h3>)}
         {project.funFact && <ul>
-            {project.funFact.map((fact) => {
-                return <li>{fact}</li>
+            {project.funFact.map((fact, i) => {
+                return <li key={project.name + "fact" + i}>{fact}</li>
             })}
         </ul>}
         <div>

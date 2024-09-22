@@ -16,6 +16,9 @@
         bottom: 0;
     }
 }
+.metaTable {
+    margin-top: 2rem;
+}
 
 @media (max-width: 800px) {
     .projectBox {
@@ -23,6 +26,12 @@
         margin-top: 1rem;
     }
     .projectsContainer {
-        grid-template-columns: repeat(auto-fit, minMax(400px, 1fr));
+        grid-template-columns: repeat(1, minMax(300px, 1fr));
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .metaTable {
+        font-size: x-small;
     }
 }

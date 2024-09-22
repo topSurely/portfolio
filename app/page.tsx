@@ -46,14 +46,14 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.infobox}>
           <h1>Okay, here goes</h1>
-          <p>{"Hello, I'm Jason. I'm a dedicated and passionate software developer that really really likes video games. I have quite the knack for troubleshooting, I'm a very quick learner, and I don't like not knowing things. I like making things and obsess over small details and like to add my own whenever I can. Please browse around, and feel free to ask me anything at"} <Link href={"mailto:portfolio@surely.mozmail.com"}>portfolio@surely.mozmail.com</Link></p>
+          <p>{"Hello, I'm Jason. I am a dedicated and passionate software developer that really really likes video games. I am recognized by my peers for troubleshooting and have a real knack for solving roadblocks. If I don't know the answer, I will persevere and research until I find the solution. I am a quick learner and most of my skills are self taught. I enjoy the creative process and small details are extremely  important to me and I like to add my own additional touches whenever possible. Please browse around, and feel free to ask me anything at"} <Link href={"mailto:portfolio@surely.mozmail.com"}>portfolio@surely.mozmail.com</Link></p>
         </div>
         <div className={`${styles.infobox}`}>
           <h1>Skills</h1>
           <div className={`${styles.grid} ${styles.skillGrid}`}>
             <div>
               <h2>Languages</h2>
-              <ul>
+              <ul className="no-bullets">
                 <li><Icon icon="react" />Typescript/Javascript</li>
                 <li><Icon icon="csharp" />C#</li>
                 <li><Icon icon="python" />Python</li>
@@ -62,7 +62,7 @@ export default function Home() {
             </div>
             <div>
               <h2>Game Engines</h2>
-              <ul>
+              <ul className="no-bullets">
                 <li><Icon icon="unity" />Unity</li>
                 <li><Icon icon="godot" />Godot</li>
                 <li><Icon icon="unrealengine" />Unreal Engine</li>
@@ -70,7 +70,7 @@ export default function Home() {
             </div>
             <div>
               <h2>Frameworks</h2>
-              <ul>
+              <ul className="no-bullets">
                 <li>
                   <Icon icon="nextjs" />Next.js
                 </li>
@@ -93,13 +93,13 @@ export default function Home() {
         <div className={styles.infobox}>
           <h1>Projects</h1>
           <div className={styles.grid}>
-            <div onClick={() => setSelectedProjects(ProjectSelection.VR)}>
+            <div onClick={() => setSelectedProjects(ProjectSelection.VR)} className={styles.clickable}>
               <h2>VR</h2>
             </div>
-            <div onClick={() => setSelectedProjects(ProjectSelection.NonVR)}>
+            <div onClick={() => setSelectedProjects(ProjectSelection.NonVR)} className={styles.clickable}>
               <h2>Non-VR</h2>
             </div>
-            <div onClick={() => setSelectedProjects(ProjectSelection.Web)}>
+            <div onClick={() => setSelectedProjects(ProjectSelection.Web)} className={styles.clickable}>
               <h2>Web</h2>
             </div>
           </div>

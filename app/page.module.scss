@@ -28,11 +28,14 @@
     display: inline-block;
     border: 2px solid white;
     padding: 1.5rem;
-    margin: auto;
   }
+}
+.clickable {
+  cursor: pointer;
 }
 @media screen and (max-width: 800px) {
   .grid {
     grid-template-columns: repeat(1, 1fr);
+    margin: auto;
   }
 }
