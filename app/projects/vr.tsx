@@ -18,6 +18,37 @@ const template: Project = {
 }
 export const VRProjects: Project[] = [
     {
+        name: "Nutrients for Life",
+        description: <div><p>
+            An educational game for children designed to be shown at trade shows and fairs to teach them about how their food is made and where it comes from. The game involves keeping all nutrient meters in the middle; not too much, not too little. Depending on how much you used you would be scored in three different categories. </p> </div>,
+        myRole: <div>
+            <p>This was my first real 'game' project. Previous to this I had worked exclusively on VR video players for various events. My excitement at that time was for Unreal Engine 4 and as a desktop only experience I wanted to use the more high powered engine, but due to not knowing C++ and the relatively short timeline on this project we instead went all in on Blueprints.</p>
+            <ul>
+                <li>
+                    Game Design and Development
+                </li>
+                <li>
+                    Asset Importing
+                </li>
+                <li>Handling Steam Deployment</li>
+            </ul>
+        </div>,
+        year: "2018",
+        funFact: ["We ended up redeveloping the game to be played on touch screens. I developed this in about 2 weeks in Construct2 as that was something I happened to know quite well at the time, and this version of the game is still shown at the Calgary Stampede."],
+        metadata: {
+            "Engine": ["Unreal Engine 4", "Construct2"],
+            "Language": ["Blueprints"],
+            "Platform": ["Virtual Reality", "Installation", "Oculus Rift", "Touch Screen"],
+            "Other skills": ["Asset Prep in Blender", "Troubleshooting"]
+        },
+        links: {
+            "Product Page": { link: "https://mammothxr.com/archive/nutrients-for-life.html" },
+            "Experience Trailer": { videoID: "FFViE-2mEiA" },
+
+        },
+        color: "#2CB029"
+    },
+    {
         name: "Thunder VR",
         description:
             <div>
@@ -64,37 +95,6 @@ export const VRProjects: Project[] = [
             "Product Page": { link: "https://mammothxr.com/archive/lenica-escape.html" },
         },
         color: "#FF7E00"
-    },
-    {
-        name: "Nutrients for Life",
-        description: <div><p>
-            An educational game for children designed to be shown at trade shows and fairs to teach them about how their food is made and where it comes from. The game involves keeping all nutrient meters in the middle; not too much, not too little. Depending on how much you used you would be scored in three different categories. </p> </div>,
-        myRole: <div>
-            <p>This was my first real 'game' project. Previous to this I had worked exclusively on VR video players for various events. My excitement at that time was for Unreal Engine 4 and as a desktop only experience I wanted to use the more high powered engine, but due to not knowing C++ and the relatively short timeline on this project we instead went all in on Blueprints.</p>
-            <ul>
-                <li>
-                    Game Design and Development
-                </li>
-                <li>
-                    Asset Importing
-                </li>
-                <li>Handling Steam Deployment</li>
-            </ul>
-        </div>,
-        year: "2018",
-        funFact: ["We ended up redeveloping the game to be played on touch screens. I developed this in about 2 weeks in Construct2 as that was something I happened to know quite well at the time, and this version of the game is still shown at the Calgary Stampede."],
-        metadata: {
-            "Engine": ["Unreal Engine 4", "Construct2"],
-            "Language": ["Blueprints"],
-            "Platform": ["Virtual Reality", "Installation", "Oculus Rift", "Touch Screen"],
-            "Other skills": ["Asset Prep in Blender", "Troubleshooting"]
-        },
-        links: {
-            "Product Page": { link: "https://mammothxr.com/archive/nutrients-for-life.html" },
-            "Experience Trailer": { videoID: "FFViE-2mEiA" },
-
-        },
-        color: "#2CB029"
     },
     {
         name: "Experience the Energy: Take The Challenge",
