@@ -1,9 +1,8 @@
-'use client'
 import type { Metadata } from "next";
 import "./globals.css";
 import '@/node_modules/react-modal-video/scss/modal-video.scss';
 
-const metadata: Metadata = {
+export const metadata: Metadata = {
   title: "Phillip Jason Geiger - A Portfolio",
   description: "I just wanna make something cool",
 };
