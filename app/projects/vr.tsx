@@ -264,6 +264,9 @@ export const VRProjects: Project[] = [
                     Creating a system allowing artists to implement motion graphics on the HUD in game.
                 </li>
                 <li>
+                    Developing a couple of the experiences and helping with some others.
+                </li>
+                <li>
                     {"Creating a movement system allowing for full three dimensional movement with ease, comfort, and even two different movement options."}
                 </li>
                 <li>Meta Store Deployment</li>
