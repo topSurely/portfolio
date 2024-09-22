@@ -104,13 +104,15 @@ export const VRProjects: Project[] = [
             </div>,
         myRole:
             <div>
+                <p>I was the sole developer on this project for the Oculus Go portion. It was later ported to the Quest, but I was not involved in that aspect.</p>
                 <ul>
                     <li>Minigame Design and Development</li>
                     <li>Asset importing</li>
                 </ul>
             </div>,
         year: "2019",
-        funFact: ["We added a level selector to more easily test the games. It was accessed by mashing the second E, and entering the level selector would play a long reverberating recording of myself saying the letter E dramatically. I was under the impression this would be a fun internal easter egg, but was later told our client asked for a way to access a level selector and they were given this secret information and heard the E."],
+        funFact: ["We added a level selector to more easily test the games. It was accessed by mashing the second E, and entering the level selector would play a long reverberating recording of myself saying the letter E dramatically. I was under the impression this would be a fun internal easter egg, but was later told our client asked for a way to access a level selector and they were given this secret information and heard the E.",
+            "All the games had unique gameplay. My favorite is one where you have to read a board and see what guage needs to be set to what. You then had to teleport around hallways to find the guages needing changing, and you had to point at them, pull the trigger, and physically rotate the controller to turn the guage."],
         metadata: {
             "Engine": ["Unity"],
             "Language": ["C#"],
@@ -120,7 +122,6 @@ export const VRProjects: Project[] = [
         links: {
             "Product Page": { link: "https://mammothxr.com/archive/petroLMI-challenge.html" },
             "Experience Trailer": { videoID: "QiPbWEnq504" },
-
         },
         color: "#29A2B0"
     },
