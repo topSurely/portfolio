@@ -169,7 +169,7 @@ export const VRProjects: Project[] = [
         name: "Glacier",
         year: "2020",
         description: <div>
-            <p>Created for Telus Spark Science Center, this was meant to be an experience to allow visitors to experience sliding into a crevace with narration written by an unfortunate hiker who thankfully survived such an event.</p>
+            <p>Created for Telus Spark Science Center, this was meant to be an experience to allow visitors to experience sliding into a crevasse with narration written by an unfortunate hiker who thankfully survived such an event.</p>
             <p>This project was unfortunately cancelled due to COVID-19 as people were going to be less willing to share a VR headset with strangers.</p>
         </div>,
         myRole: <div>
@@ -177,6 +177,11 @@ export const VRProjects: Project[] = [
             <ul>
                 <li>
                     Created a movement system that allowed the player to move forward by striking the poles into the ground. This involved the following:
+                    <ul>
+                        <li>Poles that have a slight need to actually be planted in the snow with some angle allowance.</li>
+                        <li>Moving the pole while it's planted actually moves you forward</li>
+                        <li>The character in the world actually replicates your movements using IK</li>
+                    </ul>
                 </li>
                 <li>
                     I happened to have the exertise to actually import the terrain of the actual location into the game
@@ -196,6 +201,9 @@ export const VRProjects: Project[] = [
         links: {
             "Playthrough": { videoID: "kLQodrWMQWQ", },
         },
+        funFact:
+            ["When the player falls into the crevasse I actually made them drop the sticks and turn into physics objects. No one noticed.", "It's not a misspelling, a crevice is different from a crevasse. "]
+        ,
         color: "#79E7FF"
     },
     {
