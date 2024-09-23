@@ -254,7 +254,7 @@ export const VRProjects: Project[] = [
     },
     {
         name: "Jordan Jones Dies in Space",
-        description: <div><p>Jordan Jones gets stranded in space after their ship performs an emergency jump. As they slowly lose oxygen the player journeys through their memories set in the void of space.</p><p>This was MAMMOTH XR's only solo project.</p></div>,
+        description: <div><p>Jordan Jones gets stranded in space after their ship performs an emergency jump. As they slowly lose oxygen the player journeys through their memories set in the void of space.</p></div>,
         myRole: <div>
             <ul>
                 <li>
