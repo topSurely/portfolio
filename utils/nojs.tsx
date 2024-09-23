@@ -16,7 +16,7 @@ export default function NoJS() {
     const WebProjectsElements = RenderProjects(WebProjects);
     return <noscript>
 
-        <img src="/nojs.jpg" style={{ margin: "auto", display: "block", width: "8rem", marginBottom: "2rem" }} />
+        <img src="./nojs.jpg" style={{ margin: "auto", display: "block", width: "8rem", marginBottom: "2rem" }} />
         <h2 style={{ textAlign: "center" }}>VR</h2>
         <div className={projectStyles.projectsContainer}>
             {VRProjectsElements}
