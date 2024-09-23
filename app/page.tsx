@@ -4,11 +4,12 @@ import Link from "next/link";
 import { VRProjects } from "./projects/vr";
 import ProjectPage from "./projects/project";
 import ModalVideo from "react-modal-video";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import projectStyles from "./projects/project.module.scss"
 import { Icon } from "@/utils/icon";
 import { NonVRProjects } from "./projects/nonvr";
 import { WebProjects } from "./projects/web";
+import { Element, scroller } from 'react-scroll'
 
 enum ProjectSelection {
   VR,
@@ -24,6 +25,15 @@ export default function Home() {
     setModalOpen(true);
     setVideoID(videoID);
   }
+  useEffect(() => {
+    if (selectedProjects == undefined) return;
+    scroller.scrollTo("projectContainer", {
+      duration: 150,
+      smooth: true,
+      delay: 0,
+      offset: 0,
+    });
+  }, [selectedProjects])
   const VRProjectsElements = VRProjects.map((project) => {
     return ProjectPage({ project, modal: OpenModal })
   })
@@ -104,12 +114,15 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <Element name="projectContainer">        </Element>
         {selectedProjects != undefined && <div className={projectStyles.projectsContainer}>
           {selectedProjects == ProjectSelection.VR && VRProjectsElements}
           {selectedProjects == ProjectSelection.NonVR && NonVRProjectsElements}
           {selectedProjects == ProjectSelection.Web && WebProjectsElements}
         </div>}
         {selectedProjects == undefined && <div style={{ paddingBottom: "10rem" }} />}
+
+
       </main>
     </div>
   );

@@ -40,7 +40,7 @@ export default function ProjectPage({ project, modal }: { project: Project, moda
             </table>
         )
     }
-    return (<div className={styles.projectBox} style={{ borderColor: project.color }}>
+    return (<div className={styles.projectBox} style={{ borderColor: project.color }} key={"project" + project.name}>
         <div><h1 style={{ color: project.color }}>{project.name}</h1></div>
         <h3>Year: {project.year}</h3>
         {project.description}
