@@ -285,4 +285,33 @@ export const VRProjects: Project[] = [
         },
         color: "#09E5FF"
     },
+    {
+        name: "Lethbridge College | Police VR Training Project",
+        description: <div><p>{"A VR training project using Azure's Conversational Language Understanding (CLU) API to allow current and potential officers to learn via scenarios with branching paths, navigated exclusively with their voice. Unlike other systems where you have to say specific phrases, Azure's CLU API allows us to simply input the same types of phrases and allow their AI systems to figure out if the intent is roughly the same, making the scenarios more natural to navigate through with your words."}</p></div>,
+        myRole: <div>
+            <p>I was contracted by Lethbridge College to assist with development. I ended up reworking the entire setup they had to something easier to work with, developing tools and more elaborate systems to allow Lethbridge College to create whichever scenario they need without constantly needing more development from myself.</p>
+            <ul>
+                <li>
+                    Toolset:
+                    <ul>
+                        <li>An 'activatables' system allowing various objects to serve different purposes, such as moving to another scene or setting a flag.</li>
+                        <li>A comprehensive scene system that enables certain scenario objects upon visiting, branching paths based on flags</li>
+                        <li>Exposing as much as possible to the Unity Inspector to make scenario creation easy without any additional coding</li>
+                    </ul>
+                </li>
+                <li>Comprehensive JSON logging for every event in the game to assist with debugging</li>
+                <li>Debugging mode that says which intent was hit to assist with debugging Azure intents on builds</li>
+                <li>Menu system that allows adding new scenarios with ease</li>
+                <li>Gradient based skin tone selector allowing users to pick a skin tone that most closely matches their identity</li>
+                <li>Bluetooth Heart Rate Monitor support for use in future scenarios</li>
+            </ul></div>,
+        year: "2023-2024",
+        metadata: {
+            "Engine": ["Unity"],
+            "Language": ["C#"],
+            "Platform": ["Virtual Reality", "Meta Quest"],
+            "Other skills": ["Asset Prep in Blender", "Troubleshooting"]
+        },
+        color: "#54E433"
+    },
 ]
