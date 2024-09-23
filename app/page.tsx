@@ -11,6 +11,7 @@ import { NonVRProjects } from "./projects/nonvr";
 import { WebProjects } from "./projects/web";
 import { Element, scroller } from 'react-scroll'
 import { Project } from "./projects/project.interface";
+import NoJS from "@/utils/nojs";
 
 enum ProjectSelection {
   VR,
@@ -19,6 +20,7 @@ enum ProjectSelection {
 }
 
 export default function Home() {
+  const [jsEnabled, setJSEnabled] = useState<boolean>(false);
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [modalVideoID, setVideoID] = useState<string>("")
   const [selectedProjects, setSelectedProjects] = useState<ProjectSelection | undefined>();
@@ -35,6 +37,9 @@ export default function Home() {
       offset: 0,
     });
   }, [selectedProjects])
+  useEffect(() => {
+    setJSEnabled(true);
+  }, [])
   const RenderProjects = (projects: Project[]) => {
     return projects.sort((a, b) => (b.year + ((b.yearOffset ?? 0) / 100)) - (a.year + ((a.yearOffset ?? 0) / 100))).map((project) => {
       return ProjectPage({ project, modal: OpenModal })
@@ -102,7 +107,7 @@ export default function Home() {
         </div>
         <div className={styles.infobox}>
           <h1>Projects</h1>
-          <div className={styles.grid}>
+          <div className={styles.grid} style={(!jsEnabled ? { display: "none" } : undefined)}>
             <div onClick={() => setSelectedProjects(ProjectSelection.VR)} className={styles.clickable}>
               <h2>VR</h2>
             </div>
@@ -120,8 +125,8 @@ export default function Home() {
           {selectedProjects == ProjectSelection.NonVR && NonVRProjectsElements}
           {selectedProjects == ProjectSelection.Web && WebProjectsElements}
         </div>}
+        {<NoJS />}
         {selectedProjects == undefined && <div style={{ paddingBottom: "10rem" }} />}
-
 
       </main>
     </div>
