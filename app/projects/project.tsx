@@ -53,7 +53,7 @@ export default function ProjectPage({ project, modal }: { project: Project, moda
                 </thead>
                 <tbody>
                     {project.awards.map((award) => {
-                        return <tr>
+                        return <tr key={project.name + "awards"}>
                             <td>{award.award}</td>
                             <td>{award.presenter}</td>
                             <td>{award.year}</td>

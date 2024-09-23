@@ -56,7 +56,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.infobox}>
           <h1>Okay, here goes</h1>
-          <p>{"Hello, I'm Jason—a passionate, self-taught software developer with a love for video games. I'm skilled at troubleshooting and solving problems efficiently. Learning quickly is my strength, and I take pride in perfecting the small details in everything I create. Feel free to browse my work, and reach out anytime at"} <Link href={"mailto:portfolio@surely.mozmail.com"}>portfolio@surely.mozmail.com</Link></p>
+          <p>{"Hello, I'm Jason. I'm a self-taught software developer with industry experience and a passion for video games. I’m skilled at troubleshooting and solving complex problems, always eager to learn and adapt to new challenges. Feel free to explore my work, and reach out at"} <Link href={"mailto:portfolio@surely.mozmail.com"}>portfolio@surely.mozmail.com</Link></p>
         </div>
         <div className={`${styles.infobox}`}>
           <h1>Skills</h1>
