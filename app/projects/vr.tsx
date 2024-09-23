@@ -56,7 +56,7 @@ export const VRProjects: Project[] = [
             </div>,
         myRole:
             <div>
-                <p>At this time I was the sole Programmer and was the only person developing this project. Everything in engine was handled by myself, including scene setup, asset preperation, importing, and implementation.</p>
+                <p>At this time I was the sole Programmer and was the only person developing this project. Everything in engine was handled by myself, including scene setup, asset preparation, importing, and implementation.</p>
                 <ul>
                     <li>Game Design and Development</li>
                     <li>Asset Importing</li>
@@ -112,7 +112,7 @@ export const VRProjects: Project[] = [
             </div>,
         year: "2019",
         funFact: ["We added a level selector to more easily test the games. It was accessed by mashing the second E, and entering the level selector would play a long reverberating recording of myself saying the letter E dramatically. I was under the impression this would be a fun internal easter egg, but was later told our client asked for a way to access a level selector and they were given this secret information and heard the E.",
-            "All the games had unique gameplay. My favorite is one where you have to read a board and see what guage needs to be set to what. You then had to teleport around hallways to find the guages needing changing, and you had to point at them, pull the trigger, and physically rotate the controller to turn the guage."],
+            "All the games had unique gameplay. My favorite is one where you have to read a board and see what gauge needs to be set to what. You then had to teleport around hallways to find the gauges needing changing, and you had to point at them, pull the trigger, and physically rotate the controller to turn the gauge."],
         metadata: {
             "Engine": ["Unity"],
             "Language": ["C#"],
@@ -185,10 +185,10 @@ export const VRProjects: Project[] = [
                     </ul>
                 </li>
                 <li>
-                    I happened to have the exertise to actually import the terrain of the actual location into the game
+                    I happened to have the expertise to actually import the terrain of the actual location into the game
                 </li>
                 <li>
-                    As this was running on mobile hardware, the environment couldn't be too large. I ended up implementing a seperate "3D Skybox" inspired by Half Life 2 so we could have a much larger environment during the fly-in.
+                    As this was running on mobile hardware, the environment couldn't be too large. I ended up implementing a separate "3D Skybox" inspired by Half Life 2 so we could have a much larger environment during the fly-in.
                 </li>
             </ul>
 
@@ -221,7 +221,7 @@ export const VRProjects: Project[] = [
             <p>As this was a small demo, I was assigned as the sole developer. Despite this, we still overshot scope but pulled off something very nice.</p>
             <ul>
                 <li>
-                    Implenting all game features, including:
+                    Implementing all game features, including:
                     <ul>
                         <li>
                             A pop-up/pop-down player scaling system that allowed you to get a better look at the field.
