@@ -8,4 +8,5 @@ export interface Project {
     funFact?: string[];
     metadata?: {[meta:string] : string[]};
     color?: string;
+    awards?: {presenter: string, award:string, year: number}[];
 }

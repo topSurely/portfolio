@@ -40,6 +40,29 @@ export default function ProjectPage({ project, modal }: { project: Project, moda
             </table>
         )
     }
+    const awards = (): JSX.Element => {
+        if (!project.awards) return <></>
+        return (
+            <table>
+                <thead>
+                    <tr>
+                        <th>Award</th>
+                        <th>Presenter</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {project.awards.map((award) => {
+                        return <tr>
+                            <td>{award.award}</td>
+                            <td>{award.presenter}</td>
+                            <td>{award.year}</td>
+                        </tr>
+                    })}
+                </tbody>
+            </table>
+        )
+    }
     return (<div className={styles.projectBox} style={{ borderColor: project.color }} key={"project" + project.name}>
         <div><h1 style={{ color: project.color }}>{project.name}</h1></div>
         <h3>Year: {project.yearOverride ?? project.year}</h3>
@@ -54,6 +77,11 @@ export default function ProjectPage({ project, modal }: { project: Project, moda
                 return <li key={project.name + "fact" + i}>{fact}</li>
             })}
         </ul>}
+
+        {project.awards && <div className={styles.awards}>
+            <h3>🏆Awards🏆</h3>
+            {awards()}
+        </div>}
         <div>
             {metadata()}
         </div>

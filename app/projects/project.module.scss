@@ -14,10 +14,21 @@
         width: 100%;
         text-align: center;
         bottom: 0;
+        margin-top: 1rem;
     }
 }
 .metaTable {
     margin-top: 2rem;
+}
+.awards {
+    color: gold;
+    h3{
+    text-shadow: 0px 0px 15px rgba(255, 217, 0, 0.25);
+}
+    table {
+    border-color: gold !important;
+    box-shadow: 0px 0px 15px rgba(255, 217, 0, 0.25);
+}
 }
 
 @media (max-width: 800px) {

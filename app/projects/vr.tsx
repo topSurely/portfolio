@@ -46,7 +46,12 @@ export const VRProjects: Project[] = [
             "Experience Trailer": { videoID: "FFViE-2mEiA" },
 
         },
-        color: "#2CB029"
+        color: "#2CB029",
+        awards: [
+            { award: "Best Immersive Experience", presenter: "AMPIA Nominee", year: 2019 },
+            { award: "Best XR Experience", presenter: "Digital Alberta Ember Award", year: 2019 },
+            { award: "Best VR: Branded Interactive", presenter: "Webby Honoree", year: 2019 },
+        ]
     },
     {
         name: "Thunder VR",
@@ -74,7 +79,11 @@ export const VRProjects: Project[] = [
             "Product Page": { link: "https://mammothxr.com/archive/thunder.html" },
             "Experience Trailer": { videoID: "TsZSh8OiKZE" },
         },
-        color: "#0090FF"
+        color: "#0090FF",
+        awards: [
+            { award: "Best Interactive Game", presenter: "AMPIA Nominee", year: 2020 },
+            { award: "Best XR Experience", presenter: "Digital Alberta Ember Award", year: 2020 },
+        ]
     },
     {
         name: "Lenica Escape Room",
@@ -284,7 +293,10 @@ export const VRProjects: Project[] = [
             "Meta Product Page": { link: "https://www.meta.com/en-gb/experiences/jordan-jones-dies-in-space/4494213844005443/" },
             "Playthrough": { videoID: "p6bTAy5ZW1A" }
         },
-        color: "#09E5FF"
+        color: "#09E5FF",
+        awards: [
+            { award: "Best New Media", presenter: "Stinger Awards", year: 2023 }
+        ]
     },
     {
         name: "Lethbridge College | Police VR Training Project",
@@ -314,6 +326,6 @@ export const VRProjects: Project[] = [
             "Platform": ["Virtual Reality", "Meta Quest"],
             "Other skills": ["Asset Prep in Blender", "Troubleshooting"]
         },
-        color: "#54E433"
+        color: "#54E433",
     },
 ]
