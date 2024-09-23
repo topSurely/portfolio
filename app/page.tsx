@@ -10,6 +10,7 @@ import { Icon } from "@/utils/icon";
 import { NonVRProjects } from "./projects/nonvr";
 import { WebProjects } from "./projects/web";
 import { Element, scroller } from 'react-scroll'
+import { Project } from "./projects/project.interface";
 
 enum ProjectSelection {
   VR,
@@ -34,15 +35,14 @@ export default function Home() {
       offset: 0,
     });
   }, [selectedProjects])
-  const VRProjectsElements = VRProjects.map((project) => {
-    return ProjectPage({ project, modal: OpenModal })
-  })
-  const NonVRProjectsElements = NonVRProjects.map((project) => {
-    return ProjectPage({ project, modal: OpenModal })
-  })
-  const WebProjectsElements = WebProjects.map((project) => {
-    return ProjectPage({ project, modal: OpenModal })
-  })
+  const RenderProjects = (projects: Project[]) => {
+    return projects.sort((a, b) => b.year - a.year).map((project) => {
+      return ProjectPage({ project, modal: OpenModal })
+    })
+  }
+  const VRProjectsElements = RenderProjects(VRProjects);
+  const NonVRProjectsElements = RenderProjects(NonVRProjects);
+  const WebProjectsElements = RenderProjects(WebProjects);
 
   return (
     <div className={styles.page}>

@@ -16,7 +16,7 @@ export const WebProjects: Project[] = [
                     <li>Working on a Next-Gen version of the site switching from PHP to Next.js</li>
                 </ul>
             </div>,
-        year: "2023",
+        year: 2023,
         metadata: {
             "Frameworks": ["Next.js", "Nest.js", "nodejs", "getStream.io", "TypeORM"],
             "Language": ["PHP", "React/Typescript"],
@@ -49,7 +49,8 @@ export const WebProjects: Project[] = [
                     <li>Implementing Lottie animations for use in the UI</li>
                 </ul>
             </div>,
-        year: "2023-Ongoing",
+        year: 2023,
+        yearOverride: "2023-Ongoing",
         metadata: {
             "Frameworks": ["Next.js", "Nest.js", "getStream.io", "TypeORM", "Pixi.js", "Lottie"],
             "Language": ["React/Typescript"],

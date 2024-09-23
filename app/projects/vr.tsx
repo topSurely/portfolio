@@ -4,7 +4,7 @@ const template: Project = {
     name: "project name",
     description: <div></div>,
     myRole: <div></div>,
-    year: "2017",
+    year: 2017,
     metadata: {
         "Engine": ["Unity"],
         "Language": ["C#"],
@@ -33,7 +33,7 @@ export const VRProjects: Project[] = [
                 <li>Handling Steam Deployment</li>
             </ul>
         </div>,
-        year: "2018",
+        year: 2018,
         funFact: ["We ended up redeveloping the game to be played on touch screens. I developed this in about 2 weeks in Construct2 as that was something I happened to know quite well at the time, and this version of the game is still shown at the Calgary Stampede."],
         metadata: {
             "Engine": ["Unreal Engine 4", "Construct2"],
@@ -62,7 +62,7 @@ export const VRProjects: Project[] = [
                     <li>Asset Importing</li>
                 </ul>
             </div>,
-        year: "2018",
+        year: 2018,
         funFact: ["The Elder had to speak the same lines in 3 different ways so we could randomize the order of a certain puzzle.", "This is still my favorite game we made for the Oculus Go. The headset's controller only had a gyroscope, a touch pad, a trigger, and a back button. We utilized all of it throughout the project finding joy in the limitation."],
         metadata: {
             "Engine": ["Unity"],
@@ -84,7 +84,7 @@ export const VRProjects: Project[] = [
         myRole: <div><p>
             I developed all the minigames and functionality for this project, including a trace by numbers game, a flashing light sequence, and a password solving game where you had to pick the letter of the corresponding currently playing instrument.
         </p></div>,
-        year: "2018",
+        year: 2018,
         metadata: {
             "Engine": ["Unity"],
             "Language": ["C#"],
@@ -110,7 +110,7 @@ export const VRProjects: Project[] = [
                     <li>Asset importing</li>
                 </ul>
             </div>,
-        year: "2019",
+        year: 2019,
         funFact: ["We added a level selector to more easily test the games. It was accessed by mashing the second E, and entering the level selector would play a long reverberating recording of myself saying the letter E dramatically. I was under the impression this would be a fun internal easter egg, but was later told our client asked for a way to access a level selector and they were given this secret information and heard the E.",
             "All the games had unique gameplay. My favorite is one where you have to read a board and see what gauge needs to be set to what. You then had to teleport around hallways to find the gauges needing changing, and you had to point at them, pull the trigger, and physically rotate the controller to turn the gauge."],
         metadata: {
@@ -153,7 +153,7 @@ export const VRProjects: Project[] = [
                     <li>Handling Steam Deployment</li>
                 </ul>
             </div>,
-        year: "2020",
+        year: 2020,
         links: {
             "Product Page": { link: "https://www.meta.com/experiences/experience-the-energy-adapting-futures/24905470952402292/" },
             "Experience Trailer": { videoID: "Bp7zRXK1Yds" },
@@ -168,7 +168,7 @@ export const VRProjects: Project[] = [
     },
     {
         name: "Glacier",
-        year: "2020",
+        year: 2020,
         description: <div>
             <p>Created for Telus Spark Science Center, this was meant to be an experience to allow visitors to experience sliding into a crevasse with narration written by an unfortunate hiker who thankfully survived such an event.</p>
             <p>This project was unfortunately cancelled due to COVID-19 as people were going to be less willing to share a VR headset with strangers.</p>
@@ -239,7 +239,8 @@ export const VRProjects: Project[] = [
                 </li>
             </ul>
         </div>,
-        year: "N/A",
+        year: 2022,
+        yearOverride: "N/A",
         metadata: {
             "Engine": ["Unity"],
             "Language": ["C#"],
@@ -271,7 +272,7 @@ export const VRProjects: Project[] = [
                 </li>
                 <li>Meta Store Deployment</li>
             </ul></div>,
-        year: "2022",
+        year: 2022,
         funFact: ["We ended up having to aggressively downscale much of the game's graphics and effects to make it run on the Quest 1. Meta removed the Quest 1 requirements a few months after release."],
         metadata: {
             "Engine": ["Unity"],
@@ -305,7 +306,8 @@ export const VRProjects: Project[] = [
                 <li>Gradient based skin tone selector allowing users to pick a skin tone that most closely matches their identity</li>
                 <li>Bluetooth Heart Rate Monitor support for use in future scenarios</li>
             </ul></div>,
-        year: "2023-2024",
+        year: 2023,
+        yearOverride: "2023-2024",
         metadata: {
             "Engine": ["Unity"],
             "Language": ["C#"],

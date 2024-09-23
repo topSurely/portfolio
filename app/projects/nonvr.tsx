@@ -3,7 +3,7 @@ const template: Project = {
     name: "project name",
     description: <div></div>,
     myRole: <div></div>,
-    year: "2017",
+    year: 2017,
     metadata: {
         "Engine": ["Unity"],
         "Language": ["C#"],
@@ -32,7 +32,7 @@ export const NonVRProjects: Project[] = [
                     <li>Cinematic camera switcher to showcase the environment as much as possible</li>
                 </ul>
             </div>,
-        year: "2022",
+        year: 2022,
         funFact: ["I went way too hard on the locomotive simulation. Each of the cars actually does add weight and affects acceleration and braking speeds, and I actually have the locomotive start braking based on its current distance to the next stop. No one noticed or cared.", "Expanding on environment optimization, this issue came up rather close to the end of the wire as we couldn't have all locales loaded at the same time without putting stress on the gpu, and since we were rendering up to 3 different perspectives on the same machine (which was actually meant to be 3 different machines originally) this would mean that simply enabling the new environment would cause a hitch for all the other players. I ended up creating a rather hacky solution where I created an array of all the objects across each scene, and when a player enters a new scene it enables all the objects over the span of a few seconds. Once a player exits, it steadily disables all the objects again (provided there are no other players in the area). This made sure there was no hitching and lead to a smooth experience."],
         metadata: {
             "Engine": ["Unity"],
