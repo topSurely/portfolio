@@ -36,7 +36,7 @@ export default function Home() {
     });
   }, [selectedProjects])
   const RenderProjects = (projects: Project[]) => {
-    return projects.sort((a, b) => b.year - a.year).map((project) => {
+    return projects.sort((a, b) => (b.year + ((b.yearOffset ?? 0) / 100)) - (a.year + ((a.yearOffset ?? 0) / 100))).map((project) => {
       return ProjectPage({ project, modal: OpenModal })
     })
   }

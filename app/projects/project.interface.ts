@@ -3,6 +3,7 @@ export interface Project {
     description: JSX.Element;
     myRole: JSX.Element;
     year: number;
+    yearOffset?: number;
     yearOverride?: string;
     links?: {[meta:string]: {videoID?: string, link?: string}};
     funFact?: string[];

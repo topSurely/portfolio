@@ -282,6 +282,7 @@ export const VRProjects: Project[] = [
                 <li>Meta Store Deployment</li>
             </ul></div>,
         year: 2022,
+        yearOffset: 5,
         funFact: ["We ended up having to aggressively downscale much of the game's graphics and effects to make it run on the Quest 1. Meta removed the Quest 1 requirements a few months after release."],
         metadata: {
             "Engine": ["Unity"],
