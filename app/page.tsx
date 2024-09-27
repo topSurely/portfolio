@@ -106,7 +106,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            {showFunny && <div style={{ gridColumn: "span 3", position: "relative" }}>
+            {showFunny && <div className={styles.funny} style={{ position: "relative" }}>
 
               <div style={{ position: "absolute", border: "none", pointerEvents: "none", margin: "-1.5rem", padding: "0", width: "100%", height: "100%" }}>
 
@@ -128,7 +128,7 @@ export default function Home() {
                     setHoveringMeLink(true)
                   }} onMouseLeave={() => {
                     setHoveringMeLink(false)
-                  }}>intro to Calgary Underground Film Festival 2023</Link>. It played before every film.
+                  }}>intro to Calgary Underground Film Festival 2024</Link>. It played before every film.
                 </li>
                 <li>
                   Starred in an <Link href="https://youtu.be/Gktdvz6Qng0?t=11" onMouseEnter={() => {
@@ -144,9 +144,9 @@ export default function Home() {
 
             </div>}
           </div>
-          <p style={{ position: "absolute", bottom: "0", right: "0", fontSize: "7px" }} onClick={() => {
+          {jsEnabled && !showFunny && <p style={{ position: "absolute", bottom: "0", right: "0", fontSize: "7px" }} onClick={() => {
             setShowFunny(true)
-          }}>???</p>
+          }}>???</p>}
         </div>
         <div className={styles.infobox}>
           <h1>Projects</h1>

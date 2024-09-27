@@ -33,9 +33,15 @@
 .clickable {
   cursor: pointer;
 }
+.funny {
+  grid-column: span 3;
+}
 @media screen and (max-width: 800px) {
   .grid {
     grid-template-columns: repeat(1, 1fr);
     margin: auto;
+  }
+  .funny {
+    grid-column: inherit;
   }
 }
