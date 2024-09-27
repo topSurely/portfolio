@@ -108,13 +108,12 @@ export default function Home() {
             </div>
             {showFunny && <div className={styles.funny} style={{ position: "relative" }}>
 
-              <div style={{ position: "absolute", border: "none", pointerEvents: "none", margin: "-1.5rem", padding: "0", width: "100%", height: "100%" }}>
+              <div style={{ position: "absolute", border: "none", pointerEvents: "none", margin: "-1.5rem", padding: "0", width: "100%", height: "100%", zIndex: "-1000", }}>
 
                 <img src="./thereIam.jpg" style={{
-                  backgroundImage: "URL(./thereIam.jpg)",
                   position: "absolute",
                   opacity: hoveringMeLink ? "1" : "0",
-                  transition: "opacity 0.25s", backgroundSize: "contain", backgroundRepeat: "no-repeat", zIndex: "-1000",
+                  transition: "opacity 0.25s",
                   width: "100%",
                   height: "100%"
                 }} />
