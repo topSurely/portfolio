@@ -106,7 +106,12 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            {showFunny && <div className={styles.funny} style={{ position: "relative" }}>
+            <div className={styles.extra} style={{textAlign:"center"}}>
+              <img src="./blender_logo_socket.png" style={{width:"90%", maxWidth:"20rem", margin: "auto", display: "block"}} />
+              <p style={{paddingTop:"1rem"}}>I'm not an artist by any means, but I have extensive knowledge of Blender over around 15 years and regularly handle my own exports and asset setup to ensure an asset functions exactly as needed.</p>
+              <sub style={{display:"block", paddingTop:"1rem"}}>I genuinely just really enjoyed tinkering with Blender in High School and then never stopped</sub>
+            </div>
+            {showFunny && <div className={styles.extra} style={{ position: "relative" }}>
 
               <div style={{ position: "absolute", border: "none", pointerEvents: "none", margin: "-1.5rem", padding: "0", width: "100%", height: "100%", zIndex: "-1000", }}>
 
